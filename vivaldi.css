@@ -1,0 +1,158 @@
+#browser .vivaldi {
+    display: none !important;
+    padding-bottom: 7px !important;
+    /* padding-top: 5px; */
+    padding-top: 0px;
+    height: 0px;
+    position: relative !important;
+}
+#tabs-container .trash {
+  display: flex;
+  flex: 0 0 auto;
+}
+#tabs-container.top {
+    padding-top:0px !important;
+    padding-left: 78px !important;
+}
+.tabs-off.maximized #header {
+    display: none !important;
+    height: 0px !important;
+}
+
+.maximized .window-buttongroup {
+    display: none !important;
+}
+#browser .window-buttongroup {
+    margin-left: 8px;
+    margin-top: 3px !important;
+    /* margin-top: 1px !important; */
+    clear: top !important;
+    clear: bottom !important;
+    /* padding-bottom: 10px !important; */
+    display: flex !important;
+    vertical-align: middle !important;
+    /* margin-bottom: -10px !important; */
+    /* bottom: -10px !important; */
+}
+/* move CSD a little bit when tabs off cause titlebar is more narrow  */
+#browser.tabs-off .window-buttongroup {
+    margin-top: 1px !important;
+}
+/* hide title bar when tabs off */
+#browser.tabs-off #header {
+    display: none !important;
+}
+
+
+/* these settings are to shrink tab bar but there are issues */
+/* #tabs-container { */
+/*     height: 20px !important; */
+/*     margin-top: 0px !important; */
+/*     padding-top: 0px !important; */
+/* } */
+
+/* .tab-position .tab .tab-header { */
+/*     /\* top right bottom left*\/ */
+/*     padding: 2px 0 6px 6px !important; */
+/*     align-items: top !important; */
+/*     height: 20px !important; */
+/* } */
+/* .tab-position .tab .favicon, */
+/* .tab-position .tab .close { */
+/*     margin-top: 1px !important; */
+/*     margin-bottom: 2px !important; */
+/*     padding-bottom: 5px !important; */
+/*     min-height: 15px !important; */
+/*     height: 15px !important; */
+/*     background-size: 15px 15px !important; */
+/* } */
+
+/* .tab-indicator.active { */
+    /* background-color: #4285f4 !important; */
+/* } */
+
+.tab.active {
+    opacity: 1 !important;
+    /* background-color: #4285f4 !important;*/
+    /* color: #ffffff !important; */
+    color: var(--colorAccentFg) !important;
+    background-color: var(--colorAccentBg) !important;
+}
+.tab {
+    opacity: 1 !important;
+    background-color: var(--colorBg) !important;
+}
+
+
+/* #browser.native.linux.tabs-top.stacks-off #titlebar button, */
+/* #browser.native.win.tabs-top.stacks-off #titlebar .window-buttongroup { */
+/*     display: none !important; */
+/* } */
+#browser.linux #titlebar #pagetitle {
+    height: 20px !important;
+    top: 3px !important;
+    clear: top !important;
+}
+.address-bottom #tabs-container.top,
+.address-off #tabs-container.top {
+    border-bottom-width: 0px !important;
+}
+#browser .window-buttongroup button {
+    /* height: 30px !important; */
+    /* top: 5px :important; */
+    background-color: transparent !important;
+    /* background-color: rgba(205, 115, 232, 1) !important; */
+    width: 21px !important;
+    background-repeat: no-repeat !important;
+    vertical-align: center !important;
+    margin-left: 0px !important;
+}
+#browser.linux .window-buttongroup button.window-minimize svg path,
+#browser.linux .window-buttongroup button.window-maximize svg path,
+#browser.linux .window-buttongroup button.window-restore svg path,
+#browser.linux .window-buttongroup button.window-close svg path {
+    display: none;
+}
+#browser .window-buttongroup button svg circle {
+    fill-opacity: 0.2;
+}
+#browser.linux .window-buttongroup button.window-minimize {
+    background-size: 17px 17px;
+    margin-right: 7px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAESSURBVDiNpZO9SgNREIW/Ee2MXfIC/ryLJI2wsdNiQbDZPImCuIU/uI1goQQb48sIaQVDEDQq93pvMjYmuy4xZtdTDpxvzhkY+KckP9CTrRrmvYW3dbxZx1nw5oGhvcd+xHLw1PsVoGdBE2cTnK3gLXjDNwC8BWcHOBPK0XN77FmYmC92mqhcA5UZiSsINxotBz8AerlfA02mVZpeWxONqKYJRq71x+a8VnCLUQoQGgXMYzVSAKyWAKxlAVoCoFlAtwSgmwKETmG7cJdJsBQDgwL2F4Y+ngBk97SHash8t1CQUM7pZxKA7F21gW3gdeZmlUDit9u0SR5/vFllOIrwpo43G+kzfXYwJpbDx/5cJefVF9Q5bhUqSGYPAAAAAElFTkSuQmCC);
+}
+#browser.linux .window-buttongroup button.window-restore,
+#browser.linux .window-buttongroup button.window-maximize {
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    margin-right: 7px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEuSURBVDiNrZO9SgNBFIXPncRud8VGe4k+hi8gNmIQrFQsFBLsBWFfwUSwUewEFWxCsFTs8wDiTy8GZF1/0Jk712J3RxTirqunmWGG891zhzvAH0XfD1Z34tFXQpPZTmtDE4YhmumKje1aUe3TDf9+IGBtN65riz3D8A0LNAOGka4CzXg01i6dbY6cZB6VbRr7cR2EQwD+D4kDiDqeCh9mvyRYP3gas+90bdh6WdUBCZI7K9ELVK0XBn0FABUjTUC8wi8nGB4y3HAtCNFMYbNT4lFJHzT+ewBqDlBS4gACuS0BuHEAEumUCNBxAK5SG0Bc2EuIdLWy7QBbC94dQVaQ9pVXmiDLvTDoOwAAtBb9Iwjmc5JEIDt3EX6Oct5nmkwmkS7Z2O7zG7XO08r/pg/rq5n8TtDskQAAAABJRU5ErkJggg==);
+}
+#browser.linux .window-buttongroup button.window-close {
+    background-size: 17px 17px;
+    transition: all 0s ease-out;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEsSURBVDiNpdKxTgJBEAbgf49Ahx2E3lP0WaAEOwowMTERKh6D7ioLHkBDbMTHwIKEhgRKJIRGKWCWY34LcysiEsBpNtnk/2Zms8A/y2xejEultC7C2soucmrtGUWgYvsaygvm88Dvdid/ApPrm+JKpKkiSbUCtRaUr1OtQEVmGi4rF71eK8p4Lnx7VyT5ACC5Y+IklI893y/8AMb1etqQzW0rbVvbkM3XTCblgIRFDTC7Om/WSSIWqzqAHvMHhKM58g4AcXowAPjfAMAjAK4DgyOAwTrQPgJ4dsAybgKAswPC73HVwAGZRmNCehXs9xY0ZCU7Gk0dAADp+6BlyCsAH7s6k17hcjh8ii5+/by3cjnF2bwahpKj2HOKYGVtX0XaqmGQ7XSm+225Z30C9tCTDRFW4JoAAAAASUVORK5CYII=);
+}
+.isblurred .window-buttongroup button {
+    /*opacity: 0.6;*/
+    transition: all 0s ease-out;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAADZQTFRFAAAAjo6OgICAfHyKeYCNe4CNeX2Kd4CIeoCNe36MeoCKe4CLen6KeoGMeYCLe4CLen6Jen6MXbmndwAAABJ0Uk5TAAkKJSY6OzxcXV5sbW1ubnNzWZa0PgAAAFtJREFUGBltwUEOhCAQRcEHtigjjfz7X3YMIaYXVvEpH/W+a8ks5prcmGxoGcYju14tAYeCAvwUVKArcMAVNKAqqEBRsAPZ9boSDxtaxsZkTdO1saRy9n7uiS9/KWUJqhO+r24AAAAASUVORK5CYII=);
+}
+/*#browser.linux .window-buttongroup button {
+
+    transition: all 0.2s ease; */
+}
+#browser.linux .window-buttongroup button:hover {
+    background-color: transparent !important;
+}
+#browser.linux .window-buttongroup button.window-close:hover {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAH3SURBVDiNpVNBaxNBFP5mNwm0IUKw2QaVtqTRtODBSw9CsEGP7bH11kMjCIItHtKrgpdeakUjSIT8AKV4sdJr0rTFUpJDIZdie4whxEMbYfPG3Xke6q7bDdWC32Vm3sz73ve+mQH+E8IfaM7NGaprLdqyO6WkvM5EUCQPlEWfYZr55P5+61yC1oOHszZRURFFlCQoKcF0OipJUEQdZf3MjtXra06O5iY/ejzLzO8BRP6iOALFH+rJ5MwZgmYuZwjmoqNI6+8/8Wdq4XDHUS2Yi7V4POYShCQWAeFWjhbe9kWXlysQQkEIFcu/2ryysRH28F0K6foCAAQAgDWe9laTe3vboYmJzMDqiy2lbAQTo3fM3d0ygMk/7olpAE9PPWAkvASd128yslYr6SMj6WBiNN2t1srfl5YmcRZJt4UeaJodGLgccJb64GBI6LrlO8VegkPvTvT5sx1taDhtbu+Uzc2tcvDa1dvGu8IXH8Gh6wGAdQC3XAFDw+OyUimdrL7MMBEgn5T67t676SP4BPy+tmYuZ+g/zK9KyoiSEooI5zwkZ36sm2Yy1Wi0NQCIr6y0mLWs09c/wII5m2o02l4PYBTya4L5PoCeR+TBMbM2M3509NEJ9Hymb/PzMe6YC5ZFU0zyBhPBlvJAEa0rZeVT1Wr7Aiovjl/AKPQwqR/jIgAAAABJRU5ErkJggg==);
+}
+#browser.linux .window-buttongroup button.window-minimize:hover {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFASURBVDiNpZNNSwJhEMd/s3gJ7Kanbr1c+xp6CfLgLTxEBxcKgugzeOkgvcgSFBR9AOmSfhbBWxCIELq47os7HbRdtVW2msvDzDzzn9/MwwP/NFkO6HU5T/hpEngFfHcXbwwTp0PgtVHHktpHb6WA3pdLuOMGgZslcCEYgz87Axd818Z3Tan3m981RlT8UCkR8oSQXcmrZDH0WU83DxcE9PEsj4aNpJESRAQJG3pBLiYwRias6fxTZZNRphoLCMX0xRFJESAzc7YXkuftZJrLLXvO25kn0D8QaEwg2gX2o2S9YCc+47wJ3ZhAjdavCQzeYoHJhgXY6+4vtR8ggRUJyPFNDzAhxS4ERQ1T7ujHBICcvDQRqaAyXFM8YGIcye3wNQ4tmV4d5Mi41elncvamS3Q6BF4L9SypvffTj5rCvgBr6YSRv+GvAwAAAABJRU5ErkJggg==);
+}
+#browser.linux .window-buttongroup button.window-restore:hover,
+#browser.linux .window-buttongroup button.window-maximize:hover {
+    transition: all 0s ease-out;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHJSURBVDiNrZK/a1NRFMc/576rvkhSKLQ46dDoqFNXwa1VF7urg4PkKZLBSVHIIHRRBJEQhwp1dCpSSB0EUVz6FyiVTC5S/MFLTcK7vxxe80xi20W/0+Xccz7nnHu/8I+SycCtJ93ZHU1ifFjILCetB+vYMj685qdqtZcr2/sCaivpkrXSNJ6ycwHjwDowDpwLGMtOFnzy9v702rBGDQ83V9MlQVZFKB8wb1mCenG28ePSGODO8+6sBNXca6U9MZ7muUY6A6ABBppEvJQhFFmRgvpiKZ6vag3Q+ep8svKrlyOkkhlXAx4oAKXU4mgLrcB5eNzuDzY/WwswdyxSozle8hoFEEKYK+YTqJ8vxYcjwXl4uN4ffPiUQ8YVqgWA0dmB08cjXb9Qig9Fgg855P1HMwaREEIBEKQzyT9zItL1xTiOFPgAj9b7g7H+ojp/VsBvFBcBvnz3HmC+qvXti6VYq9wP43Jt2P2FI4ZWpsINyD1w72WvN2ok6ye2J6T+qG4VEyxfq2wT+WTyLfZRUEKyeXfqWwEAeHplag0VrgLdA4pTxF9+15h+NQz85bzrz9IZ46RmPQuZC6eMA+tlyzi3kTnVerPb+b/pN7G7xcJAReoSAAAAAElFTkSuQmCC);
+}
